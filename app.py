@@ -46,9 +46,9 @@ def upload():
         for t in text:
             df = df.append(dict(locale=t.locale,description=t.description),ignore_index=True)
         
-        return render_template('prediction.html',prediction=df['description'][0])
+#         return render_template('prediction.html',prediction=df['description'][0])
 
-#         return jsonify(df['description'][0])
+        return jsonify(df['description'][0])
 #         # print(df['description'][0])
 
         
